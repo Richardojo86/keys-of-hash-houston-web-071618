@@ -1,9 +1,11 @@
 class Hash
   def keys_of(*arguments)
-    hash.collect{|key, value| if value == arguments 
-    arr << key 
-  end 
+    animal = []
+    self.each { |animal, place|
+    if arguments.include?(place)
+      animals << animal
+    end
     }
-  arr
+  return animals
 end
 end 
